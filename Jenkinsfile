@@ -24,17 +24,20 @@ pipeline {
             }
         }
 
-	stage ('sonarQube code') {
-	    steps {
-		withSonarQubeEnv('sonarQube') {
-			bat 'mvn clean verify sonar:sonar'
-		}
-	    }
-	}
+	 stage ('Cucumber Reports') {
+
+            steps {
+                cucumber buildStatus: "UNSTABLE",
+                    fileIncludePattern: "**/cucumber.json",
+                    jsonReportDirectory: 'target'
+
+            }
+
+        }
 
         stage ('package Stage') {
             steps {
-                withMaven(maven : 'MAVEN_3_8_1') {
+                withMaven(maven : 'MAVEN_3_6_3') {
                     bat 'mvn package'
                 }
             }
