@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.example.jobagapi.cucumber.CucumberRunnerTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 0.563 s <<< FAILURE! - in com.example.jobagapi.cucumber.CucumberRunnerTest
-As a postulant i want to postulate a new job.  Time elapsed: 0.306 s  <<< ERROR!
+Tests run: 14, Failures: 0, Errors: 14, Skipped: 0, Time elapsed: 0.621 s <<< FAILURE! - in com.example.jobagapi.cucumber.CucumberRunnerTest
+As a postulant i want to postulate a new job.  Time elapsed: 0.325 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/employeers/105/joboffers": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-As a postulant i dont want postulate a jobs with low minimum salary  Time elapsed: 0.016 s  <<< ERROR!
+As a postulant i dont want postulate a jobs with low minimum salary  Time elapsed: 0.039 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/employeers/105/joboffers": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-As a postulant i want to access a interview through the link  Time elapsed: 0.015 s  <<< ERROR!
+As a postulant i want to access a interview through the link  Time elapsed: 0.021 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/interviews/": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
@@ -18,11 +18,11 @@ As a postulant i want to access to my active payment plans  Time elapsed: 0.014 
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/101/planpostulants": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-As a postulant i want to have 2 active payment plans  Time elapsed: 0.01 s  <<< ERROR!
+As a postulant i want to have 2 active payment plans  Time elapsed: 0.012 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/101/planpostulants": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-As a Postulant i want to register with my email.  Time elapsed: 0.013 s  <<< ERROR!
+As a Postulant i want to register with my email.  Time elapsed: 0.011 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
@@ -30,31 +30,31 @@ As a Postulant i want to see a error if the email is in use.  Time elapsed: 0.01
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-The applicant postulant to register successfully  Time elapsed: 0.057 s  <<< ERROR!
+The applicant postulant to register successfully  Time elapsed: 0.052 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-As a Postulant i want to add to my professionalprofile my skills.  Time elapsed: 0.014 s  <<< ERROR!
+As a Postulant i want to add to my professionalprofile my skills.  Time elapsed: 0.013 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/100/profiles": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-As a user i want to sign up as a employeer with a not used phone number.  Time elapsed: 0.015 s  <<< ERROR!
+As a user i want to sign up as a employeer with a not used phone number.  Time elapsed: 0.014 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/employeers/": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-As a Employeer i want to see a error if the number is in use.  Time elapsed: 0.009 s  <<< ERROR!
+As a Employeer i want to see a error if the number is in use.  Time elapsed: 0.011 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-Postulant is unable to register  Time elapsed: 0.011 s  <<< ERROR!
+Postulant is unable to register  Time elapsed: 0.01 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/104/profiles": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-The postulant enters a wrong or not allowed registration data  Time elapsed: 0.01 s  <<< ERROR!
+The postulant enters a wrong or not allowed registration data  Time elapsed: 0.009 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/104/profiles": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 
-The psotulant did not accept the terms and conditions  Time elapsed: 0.013 s  <<< ERROR!
+The psotulant did not accept the terms and conditions  Time elapsed: 0.009 s  <<< ERROR!
 org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com/api/postulants/104/profiles": jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com; nested exception is java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 Caused by: java.net.UnknownHostException: jobagbackend-env.eba-uqwxesqd.us-east-2.elasticbeanstalk.com
 

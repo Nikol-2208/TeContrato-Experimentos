@@ -1,15 +1,15 @@
 pipeline {
     agent any
     tools {
-        maven 'MAVEN_3_6_3'
+        maven 'MAVEN_3_8_1'
         jdk 'JDK_1_11'
     }
 
     stages {
-        stage ('Compile Stage') {
+        stage ('Compile Stage 2021-2') {
 
             steps {
-                withMaven(maven : 'MAVEN_3_6_3') {
+                withMaven(maven : 'MAVEN_3_8_1') {
                     bat 'mvn clean compile'
                 }
             }
@@ -18,26 +18,27 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                withMaven(maven : 'MAVEN_3_6_3') {
+                withMaven(maven : 'MAVEN_3_8_1') {
                     bat 'mvn test'
                 }
             }
         }
 
-	stage ('Cucumber Reports') {
+	stage ('sonarQube code') {
 	    steps {
-		cucumber buildStatus: "UNSTABLE",
-                            fileIncludePattern: "**/cucumber.json",
-                            jsonReportDirectory: 'target'
+		withSonarQubeEnv('sonarQube') {
+			bat 'mvn clean verify sonar:sonar'
+		}
 	    }
 	}
 
         stage ('package Stage') {
             steps {
-                withMaven(maven : 'MAVEN_3_6_3') {
+                withMaven(maven : 'MAVEN_3_8_1') {
                     bat 'mvn package'
                 }
             }
         }
 
     }
+}
